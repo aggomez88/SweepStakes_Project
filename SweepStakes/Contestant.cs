@@ -8,10 +8,9 @@ namespace SweepStakes
 {
     class Contestant
     {
-        string FirstName;
-        string LastName;
-        string EmailAddress;
-        int RegistrationNumber;
-
+        public string FirstName;
+        public string LastName;
+        public string EmailAddress;
+        public int RegistrationNumber;
     }
 }

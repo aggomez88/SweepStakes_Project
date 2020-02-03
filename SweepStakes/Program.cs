@@ -14,6 +14,8 @@ namespace SweepStakes
             // REVIEW STACK SLIDES (PUSH, POP) --> .PUSH/ .POP
             // REVIEW QUEUE SLIDES (ENQUEUE, DEQUEUE)--> .ENQUEUE/ .DEQUEUE 
             // 
+            Contestant contestant = new Contestant();
+            contestant.FirstName = "Mike";
         }
     }
 }
