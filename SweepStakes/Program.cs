@@ -14,8 +14,15 @@ namespace SweepStakes
             // REVIEW STACK SLIDES (PUSH, POP) --> .PUSH/ .POP
             // REVIEW QUEUE SLIDES (ENQUEUE, DEQUEUE)--> .ENQUEUE/ .DEQUEUE 
             // 
-            Contestant contestant = new Contestant();
-            contestant.FirstName = "Mike";
+            //Contestant contestant = new Contestant();
+            //contestant.FirstName = UserInterface.ContestantFirstName();
+
+            SweepStakes sweepstakes = new SweepStakes("Used Cars");
+
+            Contestant cont = UserInterface.AddContestant();
+
+            sweepstakes.RegisterContestant(cont);
+            sweepstakes.PrintContestantInfo(cont);
         }
     }
 }

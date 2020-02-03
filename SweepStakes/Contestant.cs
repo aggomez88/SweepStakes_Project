@@ -8,6 +8,9 @@ namespace SweepStakes
 {
     class Contestant
     {
+        // member variabvles ( HAS A )
+        // Contestant contestant = new Contestant();
+
         public string FirstName;
         public string LastName;
         public string EmailAddress;
