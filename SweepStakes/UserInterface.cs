@@ -10,10 +10,10 @@ namespace SweepStakes
     {
         public static Random random = new Random();
 
-        public static string GetUserInputFor(string admin)
+        public static string GetUserInputFor()
         {
             Console.WriteLine($"Hello please enter your login credentials");
-            admin = Console.ReadLine();
+            string admin = Console.ReadLine();
             return admin;
         }
         public static string ContestantFirstName()
@@ -22,21 +22,21 @@ namespace SweepStakes
             string firstName = Console.ReadLine();
             return firstName;
         }
-        public static string ContestantLastName(string lastName)
+        public static string ContestantLastName()
         {
             Console.WriteLine("Please enter your last name...");
-            lastName = Console.ReadLine();
+            string lastName = Console.ReadLine();
             return lastName;
         }
-        public static string ContestantEmailAddress(string emailAddress)
+        public static string ContestantEmailAddress()
         {
             Console.WriteLine("Please enter your email address...");
-            emailAddress = Console.ReadLine();
+            string emailAddress = Console.ReadLine();
             return emailAddress;
         }
-        public static int RegistrationNumber(int registrationNumber)
+        public static int RegistrationNumber()
         {
-            registrationNumber = random.Next(0, 1000);
+            int registrationNumber = random.Next(0, 1000);
             return registrationNumber;
         }
         
