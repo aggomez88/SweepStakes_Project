@@ -6,17 +6,29 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class MarketingFirm
+    public class MarketingFirm
     {
         ISweepStakesManager _manager;
 
         public MarketingFirm(ISweepStakesManager _manager)
         {
-
+            this._manager = _manager;
         }
-        public void CreateSweepstakes()
-        {
 
+        public string SelectManagementType()
+        {
+            Console.WriteLine("How would you like to manage your sweepstakes?");
+            Console.WriteLine("1- Stack");
+            Console.WriteLine("2- Queue");
+            string input = Console.ReadLine();
+            return input;
+        }
+        public void CreateSweepstakes(string name)
+        {
+            SweepStakes sweepStakes = new SweepStakes(name);
+            ManagerFactory managerFactory = new ManagerFactory();
+            
+            managerFactory.GetManager() = 
         }
     }
 }
